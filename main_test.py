@@ -16,7 +16,7 @@ def test_main_1():
     lines = captureOut.getvalue().split('\n')
     print(lines)
 
-    res = re.search('[\w,\W]*uadrant 2[\w,\W]*', lines[0])
+    res = re.search(r'[\w,\W]*uadrant 2[\w,\W]*', lines[0])
     assert res != None
     print(res.group())
 
@@ -33,7 +33,7 @@ def test_main_2():
     lines = captureOut.getvalue().split('\n')
     print(lines)
 
-    res = re.search('[\w,\W]*uadrant 4[\w,\W]*', lines[0])
+    res = re.search(r'[\w,\W]*uadrant 4[\w,\W]*', lines[0])
     assert res != None
     print(res.group())
 
@@ -50,7 +50,7 @@ def test_main_3():
     lines = captureOut.getvalue().split('\n')
     print(lines)
 
-    res = re.search('[\w,\W]*Quadrant 3[\w,\W]*', lines[0])
+    res = re.search(r'[\w,\W]*Quadrant 3[\w,\W]*', lines[0])
     assert res != None
     print(res.group())
 
@@ -67,6 +67,6 @@ def test_main_4():
     lines = captureOut.getvalue().split('\n')
     print(lines)
 
-    res = re.search('[\w,\W]*Quadrant 1[\w,\W]*', lines[0])
+    res = re.search(r'[\w,\W]*Quadrant 1[\w,\W]*', lines[0])
     assert res != None
     print(res.group())
